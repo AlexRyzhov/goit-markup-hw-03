@@ -93,6 +93,7 @@ body {
 
 .page-heading {
     background-color: var(--third-background-color);
+    text-align: center;
 }
 
 .page-title {
@@ -102,7 +103,6 @@ body {
     font-weight: 900;
     Line-height: 1.37;
     Letter-spacing: 0.06em;
-    text-align: center;
 }
 
 .button-heading {
@@ -118,8 +118,7 @@ body {
 }
 
 .button-heading:hover, .button-heading:focus {
-    background-color: var(--secondary-background-color);
-    color: var(--accent);
+    background-color: #188CE8
 }
 
 /*Наши преимущества*/
@@ -207,7 +206,7 @@ body {
 }
 
 .footer-info-link {
-    color: var(--primary-text-color);
+    color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     text-decoration: none;
 }
