@@ -7,11 +7,40 @@
     --third-background-color: #2F303A;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: var(--pirmary-background-color);
     color: var(--primary-text-color);
     font-family: roboto, sans-serif;
     letter-spacing: 0.03em;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .list {
@@ -33,6 +62,22 @@ body {
 
 /*Навигация сайта*/
 
+.main-nav {
+    display: flex;
+    align-items: center;
+    padding: 16px 0px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-header {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
 .nav-title {
     color: var(--secondary-text-color);
     text-decoration: none;
@@ -40,6 +85,14 @@ body {
     Font-size: 14px;
     Line-height: 1.33;
     Letter-spacing: 0.02em;
+}
+
+.nav-content {
+    margin-right: 50px;
+}
+
+.nav-content:last-child {
+    margin-right: 0px;
 }
 
 .nav-title-page {
@@ -56,6 +109,7 @@ body {
 }
 
 .logo {
+    margin-right: 93px;
     color: var(--secondary-text-color);
     Font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -69,6 +123,19 @@ body {
 }
 
 /*Авторизация на сайте*/
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-nav-content {
+    margin-right: 50px;
+}
+
+.auth-nav-content:last-child {
+    margin-right: 0px;
+}
 
 .auth-nav a {
     color: var(--primary-text-color);
@@ -85,18 +152,19 @@ body {
 
 /*Содержание сайта*/
 
-.section-title {
-    color: var(--secondary-text-color);
-}
-
-/*загаловок*/
+/*заголовок*/
 
 .page-heading {
     background-color: var(--third-background-color);
     text-align: center;
+    margin: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .page-title {
+    max-width: 696px;
+    margin: auto;
     text-transform: uppercase;
     color: var(--pirmary-background-color);
     Font-size: 44px;
@@ -106,6 +174,12 @@ body {
 }
 
 .button-heading {
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
     font-weight: 700;
     Font-size: 16px;
     Line-height: 1.9;
@@ -123,6 +197,24 @@ body {
 
 /*Наши преимущества*/
 
+.benefits {
+    padding-bottom: 0px;
+}
+
+.our-benefits-heading {
+    display: flex;
+}
+
+.our-benefits-heading li {
+    margin-right: 30px;
+    max-width: 270px;
+    justify-content: space-around
+}
+
+.our-benefits-heading li:last-child {
+    margin-right: 0px;
+}
+
 .our-benefits-list {
     color: var(--secondary-text-color);
     font-weight: 700;
@@ -132,11 +224,16 @@ body {
 }
 
 .our-benefits-text {
+    margin-top: 10px;
     Font-size: 14px;
     Line-height: 1.71;
 }
 
 /*Наша дейстельность*/
+
+.activity-header {
+    padding-top: 0px;
+}
 
 .our-activity-title {
     font-weight: 700;
@@ -144,6 +241,20 @@ body {
     Line-height: 1.17;
     color: var(--secondary-text-color);
     text-align: center;
+}
+
+.our-activity {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.our-activity-item {
+    margin-right: 30px;
+}
+
+.our-activity-item:last-child {
+    margin-right: 0px;
 }
 
 /*Наша команда*/
@@ -165,10 +276,29 @@ body {
 }
 
 .team-members {
+    max-width: 270px;
+}
+
+.our-team-heading {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-members {
+    border-radius: 4px;
+    max-width: 270px;
+    margin-right: 30px;
     background-color: var(--pirmary-background-color);
 }
 
+.team-members:last-child {
+    margin-right: 0px;
+}
+
 .team-members-title {
+    margin-top: 30px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -177,6 +307,8 @@ body {
 }
 
 .team-members-text {
+    margin-top: 10px;
+    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -185,7 +317,9 @@ body {
 /*Подвал*/
 
 .footer {
-    background-color: var(--third-background-color)
+    background-color: var(--third-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -207,7 +341,6 @@ body {
 
 .footer-info-link {
     color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
     text-decoration: none;
 }
 
@@ -215,7 +348,18 @@ body {
     color: var(--pirmary-background-color);
 }
 
+.footer-info .link {
+    margin-top: 9px;
+}
+
+.footer-info .link a {
+    font-Size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
 .address-footer {
+    margin-top: 20px;
     font-size: 14px;
     line-height: 1.17;
     font-style: normal;
@@ -233,7 +377,22 @@ body {
     text-decoration: none;
 }
 
+.filter {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-link {
+    margin-right: 8px;
+}
+
+.filter-link:last-child {
+    margin-right: 0px;
+}
+
 .filter-button {
+    padding: 6px 22px;
+    border-radius: 4px;
     background-color: var(--secondary-background-color);
     color: var(--secondary-text-color);
     cursor: pointer;
@@ -251,6 +410,8 @@ body {
 }
 
 .filter-button-page {
+    padding: 6px 22px;
+    border-radius: 4px;
     background-color: var(--accent);
     color: var(--pirmary-background-color);
     cursor: pointer;
@@ -262,6 +423,34 @@ body {
     letter-spacing: 0.03em;
 }
 
+.our-work {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.our-work-heading {
+    margin-top: 34px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.our-work-link {
+    flex-basis: calc(100% /3 -30px);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.poster-title {
+    padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+}
+
 .our-work-title {
     color: var(--secondary-text-color);
     font-weight: 700;
@@ -271,6 +460,7 @@ body {
 }
 
 .our-work-text {
+    margin-top: 4px;
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.9;
