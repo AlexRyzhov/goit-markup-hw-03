@@ -27,6 +27,14 @@ body {
     letter-spacing: 0.03em;
 }
 
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header {
+    display: flex;
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -62,23 +70,23 @@ img {
 
 /*Навигация сайта*/
 
-.main-nav {
+.header {
+    display: inline-block;
     display: flex;
-    align-items: center;
-    padding: 16px 0px;
-    border-bottom: 1px solid #ECECEC;
 }
 
 .nav {
     display: flex;
 }
 
-.nav-header {
-    padding-bottom: 0px;
-    padding-top: 0px;
+.main-nav {
+    display: flex;
+    align-items: center;
 }
 
 .nav-title {
+    padding: 32px 0;
+    display: block;
     color: var(--secondary-text-color);
     text-decoration: none;
     font-weight: 500;
@@ -96,6 +104,8 @@ img {
 }
 
 .nav-title-page {
+    padding: 32px 0;
+    display: block;
     color: var(--accent);
     text-decoration: none;
     font-weight: 500;
@@ -109,6 +119,8 @@ img {
 }
 
 .logo {
+    align-items: center;
+    display: block;
     margin-right: 93px;
     color: var(--secondary-text-color);
     Font-family: Raleway, sans-serif;
@@ -127,6 +139,7 @@ img {
 .auth-nav {
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 
 .auth-nav-content {
@@ -154,12 +167,15 @@ img {
 
 /*заголовок*/
 
-.page-heading {
+.heading {
     background-color: var(--third-background-color);
-    text-align: center;
-    margin: auto;
     padding-top: 200px;
     padding-bottom: 200px;
+}
+
+.page-heading {
+    text-align: center;
+    margin: auto;
 }
 
 .page-title {

@@ -19,7 +19,7 @@
     <header>
       <!--Навигация сайта-->
       <div class="container">
-        <section class="section nav-header">
+        <div class="header">
           <nav class="main-nav">
             <a href="#" class="logo"><span>Web</span>Studio</a>
             <ul class="nav list">
@@ -33,38 +33,41 @@
                 <a href="#" class="nav-title">Контакты</a>
               </li>
             </ul>
-
-            <!--Авторизация на сайте-->
-            <ul class="auth-nav list">
-              <li class="auth-nav-content">
-                <a href="mailto:info@example.com" class="auth-nav-link"
-                  >info@example.com</a
-                >
-              </li>
-              <li class="auth-nav-content">
-                <a href="tel:+380991111111" class="auth-nav-link"
-                  >+38 099 111 11 11</a
-                >
-              </li>
-            </ul>
           </nav>
-        </section>
+          <!--Авторизация на сайте-->
+          <ul class="auth-nav list">
+            <li class="auth-nav-content">
+              <a href="mailto:info@example.com" class="auth-nav-link"
+                >info@example.com</a
+              >
+            </li>
+            <li class="auth-nav-content">
+              <a href="tel:+380991111111" class="auth-nav-link"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <!--Содержимое сайта-->
     <main>
       <!--Заголовок сайта-->
-      <div class="container">
-        <div class="page-heading">
-          <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button-heading" type="button">Заказать услугу</button>
+      <section class="section heading">
+        <div class="container">
+          <div class="page-heading">
+            <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
+            <button class="button-heading" type="button">
+              Заказать услугу
+            </button>
+          </div>
         </div>
-      </div>
+      </section>
 
       <!--Наши преимущества-->
-      <div class="container">
-        <section class="section benefits">
+      <section class="section benefits">
+        <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="our-benefits-heading list">
             <li class="our-benefits-item">
@@ -96,12 +99,12 @@
               </p>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <!--Наша деятельность-->
-      <div class="container activity-header">
-        <section class="section">
+      <section class="section">
+        <div class="container activity-header">
           <div class="activity-header">
             <h2 class="our-activity-title">Чем мы занимаемся</h2>
             <ul class="our-activity list">
@@ -128,59 +131,57 @@
               </li>
             </ul>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <!--Наша команда-->
-      <div class="our-team container">
-        <section class="section">
-          <div class="">
-            <h2 class="our-team-title">Наша команда</h2>
-            <ul class="our-team-heading list">
-              <li class="team-members">
-                <img
-                  src="./images//index/first_person.jpg"
-                  alt="Игорь Демьяненко"
-                  width="270"
-                />
-                <h3 class="team-members-title">Игорь Демьяненко</h3>
-                <p class="team-members-text">Product Designer</p>
-              </li>
-              <li class="team-members">
-                <img
-                  src="./images//index/second_person.jpg"
-                  alt="Ольга Репина"
-                  width="270"
-                />
-                <h3 class="team-members-title">Ольга Репина</h3>
-                <p class="team-members-text">Frontend Developer</p>
-              </li>
-              <li class="team-members">
-                <img
-                  src="./images//index/third_person.jpg"
-                  alt="Николай Тарасов"
-                  width="270"
-                />
-                <h3 class="team-members-title">Николай Тарасов</h3>
-                <p class="team-members-text">Marketing</p>
-              </li>
-              <li class="team-members">
-                <img
-                  src="./images//index/fourth_person.jpg"
-                  alt="Михаил Ермаков"
-                  width="270"
-                />
-                <h3 class="team-members-title">Михаил Ермаков</h3>
-                <p class="team-members-text">UI Designer</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
+      <section class="section our-team">
+        <div class="container">
+          <h2 class="our-team-title">Наша команда</h2>
+          <ul class="our-team-heading list">
+            <li class="team-members">
+              <img
+                src="./images//index/first_person.jpg"
+                alt="Игорь Демьяненко"
+                width="270"
+              />
+              <h3 class="team-members-title">Игорь Демьяненко</h3>
+              <p class="team-members-text">Product Designer</p>
+            </li>
+            <li class="team-members">
+              <img
+                src="./images//index/second_person.jpg"
+                alt="Ольга Репина"
+                width="270"
+              />
+              <h3 class="team-members-title">Ольга Репина</h3>
+              <p class="team-members-text">Frontend Developer</p>
+            </li>
+            <li class="team-members">
+              <img
+                src="./images//index/third_person.jpg"
+                alt="Николай Тарасов"
+                width="270"
+              />
+              <h3 class="team-members-title">Николай Тарасов</h3>
+              <p class="team-members-text">Marketing</p>
+            </li>
+            <li class="team-members">
+              <img
+                src="./images//index/fourth_person.jpg"
+                alt="Михаил Ермаков"
+                width="270"
+              />
+              <h3 class="team-members-title">Михаил Ермаков</h3>
+              <p class="team-members-text">UI Designer</p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <!--Подвал-->
-    <footer class="footer container">
+    <footer class="container footer">
       <a href="#" class="logo-footer"><span>Web</span>Studio</a>
       <address>
         <p class="address-footer">г. Киев, пр-т Леси Украинки, 26</p>
