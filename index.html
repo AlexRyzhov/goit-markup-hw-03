@@ -18,36 +18,34 @@
     <!--Шапка-->
     <header>
       <!--Навигация сайта-->
-      <div class="container">
-        <div class="header">
-          <nav class="main-nav">
-            <a href="#" class="logo"><span>Web</span>Studio</a>
-            <ul class="nav list">
-              <li class="nav-content">
-                <a href="index.html" class="nav-title-page">Cтудия</a>
-              </li>
-              <li class="nav-content">
-                <a href="portfolio.html" class="nav-title">Портфолио</a>
-              </li>
-              <li class="nav-content">
-                <a href="#" class="nav-title">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <!--Авторизация на сайте-->
-          <ul class="auth-nav list">
-            <li class="auth-nav-content">
-              <a href="mailto:info@example.com" class="auth-nav-link"
-                >info@example.com</a
-              >
+      <div class="container header">
+        <nav class="main-nav">
+          <a href="#" class="logo"><span>Web</span>Studio</a>
+          <ul class="nav list">
+            <li class="nav-content">
+              <a href="index.html" class="nav-title-page">Cтудия</a>
             </li>
-            <li class="auth-nav-content">
-              <a href="tel:+380991111111" class="auth-nav-link"
-                >+38 099 111 11 11</a
-              >
+            <li class="nav-content">
+              <a href="portfolio.html" class="nav-title">Портфолио</a>
+            </li>
+            <li class="nav-content">
+              <a href="#" class="nav-title">Контакты</a>
             </li>
           </ul>
-        </div>
+        </nav>
+        <!--Авторизация на сайте-->
+        <ul class="auth-nav list">
+          <li class="auth-nav-content">
+            <a href="mailto:info@example.com" class="auth-nav-link"
+              >info@example.com</a
+            >
+          </li>
+          <li class="auth-nav-content">
+            <a href="tel:+380991111111" class="auth-nav-link"
+              >+38 099 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -55,13 +53,9 @@
     <main>
       <!--Заголовок сайта-->
       <section class="section heading">
-        <div class="container">
-          <div class="page-heading">
-            <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="button-heading" type="button">
-              Заказать услугу
-            </button>
-          </div>
+        <div class="page-heading container">
+          <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
+          <button class="button-heading" type="button">Заказать услугу</button>
         </div>
       </section>
 
@@ -105,32 +99,30 @@
       <!--Наша деятельность-->
       <section class="section">
         <div class="container activity-header">
-          <div class="activity-header">
-            <h2 class="our-activity-title">Чем мы занимаемся</h2>
-            <ul class="our-activity list">
-              <li class="our-activity-item">
-                <img
-                  src=".//images//index/first_img.jpg"
-                  alt="процесс написания команда"
-                  width="370"
-                />
-              </li>
-              <li class="our-activity-item">
-                <img
-                  src="./images//index/second_img.jpg"
-                  alt="выбор разметки сайта на смартфоне"
-                  width="370"
-                />
-              </li>
-              <li class="our-activity-item">
-                <img
-                  src="./images//index/third_img.jpg"
-                  alt="выбор цвета на планшете"
-                  width="370"
-                />
-              </li>
-            </ul>
-          </div>
+          <h2 class="our-activity-title">Чем мы занимаемся</h2>
+          <ul class="our-activity list">
+            <li class="our-activity-item">
+              <img
+                src=".//images//index/first_img.jpg"
+                alt="процесс написания команда"
+                width="370"
+              />
+            </li>
+            <li class="our-activity-item">
+              <img
+                src="./images//index/second_img.jpg"
+                alt="выбор разметки сайта на смартфоне"
+                width="370"
+              />
+            </li>
+            <li class="our-activity-item">
+              <img
+                src="./images//index/third_img.jpg"
+                alt="выбор цвета на планшете"
+                width="370"
+              />
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -145,8 +137,10 @@
                 alt="Игорь Демьяненко"
                 width="270"
               />
-              <h3 class="team-members-title">Игорь Демьяненко</h3>
-              <p class="team-members-text">Product Designer</p>
+              <div class="team-content">
+                <h3 class="team-members-title">Игорь Демьяненко</h3>
+                <p class="team-members-text">Product Designer</p>
+              </div>
             </li>
             <li class="team-members">
               <img
@@ -154,8 +148,10 @@
                 alt="Ольга Репина"
                 width="270"
               />
-              <h3 class="team-members-title">Ольга Репина</h3>
-              <p class="team-members-text">Frontend Developer</p>
+              <div class="team-content">
+                <h3 class="team-members-title">Ольга Репина</h3>
+                <p class="team-members-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-members">
               <img
@@ -163,8 +159,10 @@
                 alt="Николай Тарасов"
                 width="270"
               />
-              <h3 class="team-members-title">Николай Тарасов</h3>
-              <p class="team-members-text">Marketing</p>
+              <div class="team-content">
+                <h3 class="team-members-title">Николай Тарасов</h3>
+                <p class="team-members-text">Marketing</p>
+              </div>
             </li>
             <li class="team-members">
               <img
@@ -172,8 +170,10 @@
                 alt="Михаил Ермаков"
                 width="270"
               />
-              <h3 class="team-members-title">Михаил Ермаков</h3>
-              <p class="team-members-text">UI Designer</p>
+              <div class="team-content">
+                <h3 class="team-members-title">Михаил Ермаков</h3>
+                <p class="team-members-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -182,25 +182,23 @@
 
     <!--Подвал-->
     <footer class="footer">
-      <div class="container">
-        <div class="footer-heading">
-          <a href="#" class="logo-footer"><span>Web</span>Studio</a>
-          <address>
-            <p class="address-footer">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="footer-info list">
-              <li class="link">
-                <a href="mailto:info@example.com" class="footer-info-link"
-                  >info@example.com</a
-                >
-              </li>
-              <li class="link">
-                <a href="tel:+380991111111" class="footer-info-link"
-                  >+38 099 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
+      <div class="footer-heading container">
+        <a href="#" class="logo-footer"><span>Web</span>Studio</a>
+        <address class="address">
+          <p class="address-footer">г. Киев, пр-т Леси Украинки, 26</p>
+          <ul class="footer-info list">
+            <li class="link">
+              <a href="mailto:info@example.com" class="footer-info-link"
+                >info@example.com</a
+              >
+            </li>
+            <li class="link">
+              <a href="tel:+380991111111" class="footer-info-link"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
     </footer>
   </body>

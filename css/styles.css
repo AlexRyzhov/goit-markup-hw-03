@@ -291,6 +291,10 @@ img {
     text-align: center;
 }
 
+.team-content {
+    padding: 30px 0;
+}
+
 .team-members {
     max-width: 270px;
 }
@@ -314,7 +318,6 @@ img {
 }
 
 .team-members-title {
-    margin-top: 30px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -324,7 +327,6 @@ img {
 
 .team-members-text {
     margin-top: 10px;
-    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -364,8 +366,21 @@ img {
     color: var(--pirmary-background-color);
 }
 
+.footer-info {
+    margin-top: 9px;
+}
+
 .footer-info .link {
     margin-top: 9px;
+}
+
+.footer-info .link:first-child {
+    margin-top: 0px;
+}
+
+.address {
+    margin-top: 20px;
+    font-style: normal;
 }
 
 .footer-info .link a {
@@ -375,10 +390,8 @@ img {
 }
 
 .address-footer {
-    margin-top: 20px;
     font-size: 14px;
     line-height: 1.17;
-    font-style: normal;
 }
 
 /*-----------------------------------------------*/
@@ -394,6 +407,7 @@ img {
 }
 
 .filter {
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
 }
@@ -440,8 +454,6 @@ img {
 }
 
 .our-work {
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
@@ -449,13 +461,12 @@ img {
 }
 
 .our-work-heading {
-    margin-top: 34px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .our-work-link {
-    flex-basis: calc(100% /3 -30px);
+    flex-basis: calc(100% /3 - 30px);
     margin-top: 30px;
     margin-left: 30px;
 }
